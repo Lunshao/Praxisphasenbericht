@@ -1,0 +1,50 @@
+% !TEX root = vorlage.tex
+
+\section{Theoretische Grundlagen}\label{section:theoretische_grundlagen}
+
+\subsection{Aufgabenstellung}
+Es soll ein \acl{PoC} erstellt werden um zu überprüfen, inwiefern die Implementierung eines
+\acl{OS} \acl{fs} in das bestehende Projekt möglich ist.
+Dafür müssen zuerst die grundsätzlichen Anforderungen an das \acl{fs} seitens des Projektes und Systems dokumentiert werden.
+Danach findet eine testweise Einbindung des \acl{fs} in das bestehende Projekt statt.\\
+
+Falls dies erfolgreich sein sollte, wird eine vollständige und saubere Implementierung mit samt
+Dokumentation erfolgen.
+
+
+\subsection{Ausgangslage}
+Zu Beginn des Projekts gibt es das bereits bestehende System der \acl{IIP}, in welchem das \acl{fs} integriert werden soll.
+Das vorhandene Betriebssystem ist dabei ein Integrity OS von Green Hills Software.
+
+
+\subsection{Embedded filesystem littlefs}
+Bei \acl{lfs} handelt es sich um ein \acl{OS} \acl{fs}, welches aus der embedded Welt kommt.
+Häufig wird es auf kleinen Mikrocontrollern, wie einem ESP32 oder ähnlichen verwendet.\\
+
+Auf den ersten Blick liefert es jedoch auch die von uns gewünschten Funktionen, welche das \acl{fs} besitzen muss.
+Dazu gehören Eigenschaften, wie der Erhalt von Daten bei Stromverlust, gleichmäßiger Verschleiß des Arbeitsspeichers, sowie die Nutzung einer begrenzten Menge des Selbigen.\\
+
+Da die sonstigen Anforderungen an die Funktionalitäten des \acl{fs} relativ gering sind,
+scheint \acl{lfs} eine gute Wahl für die Umsetzung zu sein.
+
+
+\subsection{Roadmap}\label{sec:roadmap}
+Um den Start des Projekts zu vereinfachen und strukturieren, soll eine gewisse Roadmap entstehen,
+welche die wichtigsten Punkte für das \acl{PoC} abzudecken.
+
+
+\subsection{Planung der Arbeitspakete}
+Die Planung der Arbeitspakete erfolgte erst nachdem ein Grundverständnis für das Projekt vorhanden war,
+sowie ersichtlich ist, dass die Implementierung des \acl{fs} generell möglich ist.
+
+Die Arbeitspakete werden in der Projektmanagement Software JIRA verwaltet.
+
+
+\subsection{Dokumentation des Projekts}
+Die Dokumentation des Projekts erfolgt parallel zum selbigen über die Wiki-Software Confluence.
+Dies erfolgt in einem wöchentlichen Meeting, welches zum Austausch über den momentanen Projektstatus,
+sowie die weitere Planung des Projekts dient.
+
+Außerdem werden die einzelnen Arbeitspakete des Projektes ebenfalls im Confluence dokumentiert,
+sowie eine abschließende Dokumentation des gesamten Projekts.
+

@@ -1,0 +1,100 @@
+\documentclass[
+	fontsize=12pt,				% Schriftgröße
+	a4paper,						% Papierformat
+	oneside,						% einseitiges Dokument
+	titlepage,						% Titelseite verwenden
+	%parskip=half,					% Abstand zwischen Absätzen
+	headings=normal, 				% Größe der Überschriften
+	liststotoc,
+	bibliography=totocnumbered,
+	pointlessnumbers]{scrartcl}		% Abbildungs- und Tabellenverzeichnis im Inhaltsverzeichnis
+
+\usepackage[utf8]{inputenc} 		% Umlaute
+\usepackage[automark]{scrpage2} 	% Kopf- und Fußzeile
+\usepackage{graphicx} 				% Grafiken einbinden
+\usepackage[a4paper]{geometry} 		% Seitenränder einstellen
+\usepackage[printonlyused]{acronym} % Abkürzungsverzeichnis
+\usepackage{hyperref}				% Links im Dokument
+\usepackage{url}
+\setlength{\parindent}{0mm} 		% Absatz Einzug
+\setlength{\parskip}{0mm} 			% Absatz Zeilenabstand
+\usepackage{setspace}				% Zeilenabstand
+\onehalfspacing
+\usepackage[ngerman]{babel} 		% Figure in Abbildung usw umdefinieren % % [ngerman, english]
+\usepackage{struktex}
+\usepackage{listings}
+\lstset{
+	frame=single,
+	numbers=left,
+	stepnumber=1,
+}
+\usepackage{placeins}
+\usepackage[T1]{fontenc}
+\usepackage{newtxmath,newtxtext}
+\usepackage{amssymb}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+\usepackage{svg}
+\usepackage{rotating}
+\usepackage{nameref}
+\usepackage{float}
+
+\usepackage{pdfpages}
+\usepackage{adjustbox}
+
+\newcommand{\topic}{Proof of Concept und Implementierung eines filesystems unter Integrity auf embedded Hardware}
+\newcommand{\closingDate}{30.08.2021}
+\newcommand{\closingDateEng}{30. August 2021}
+
+\newcommand{\RM}[1]{\MakeUppercase{\romannumeral #1}}
+
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{gelb}{rgb}{1,0.647,0}
+\definecolor{rot}{HTML}{C0504D}
+\definecolor{gruen}{HTML}{9BBB59}
+
+\newenvironment{rotatepage}%
+{\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 90}}%
+{\pagebreak[4]\global\pdfpageattr\expandafter{\the\pdfpageattr/Rotate 0}}%
+
+%\clubpenalty1000000
+%\widowpenalty1000000
+%\displaywidowpenalty=1000000 
+
+\begin{document}
+
+\input{Deckblatt/deckblatt}
+\clearpage
+
+\input{Sperrvermerk/sperrvermerk}
+\clearpage
+
+\input{Verzeichnisse/verzeichnisse}
+\clearpage
+
+\input{Einleitung/einleitung}
+\clearpage
+
+\input{Grundlagen/grundlagen}
+\clearpage
+
+\input{Durchfuehrung/durchfuehrung}
+\clearpage
+
+%\input{Test/test}
+%\clearpage
+
+\input{Zusammenfassung/zusammenfassung}
+\clearpage
+
+%\input{Quellen/quellen}
+%\clearpage
+
+%\input{Anhang/anhang}
+%\clearpage
+
+\input{Versicherung/versicherung}
+\clearpage
+
+\end{document}

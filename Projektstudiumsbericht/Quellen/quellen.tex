@@ -1,0 +1,20 @@
+% !TEX root = vorlage.tex
+\pagenumbering{Roman}
+\stepcounter{RomanPage}
+\setcounter{page}{\value{RomanPage}}
+
+\makeatletter
+\renewcommand*\bib@heading{%
+	\section*{\bibname}%
+	\addcontentsline{toc}{section}{\bibname}
+	\@mkboth{\sectionmarkformat \bibname}{\sectionmarkformat \bibname}}
+\makeatother
+\ohead{}
+
+\begin{thebibliography}{xx}
+	
+	\bibitem{conti_automotive}\textbf{Konzernstruktur}: \textit{Willkommen bei der Continental AG}, \url{https://www.continental-corporation.com/de/unternehmen/konzernstruktur} [abgerufen 09.04.2017]
+	
+	\bibitem{messtechnik_pdf}\textbf{Parthier, Rainer}: \textit{Messtechnik - Grundlagen und Anwendungen der elektrischen Messtechnik}, Springer Vieweg, Wiesbaden, 2016, ISBN 978-3-658-135973
+	
+\end{thebibliography}

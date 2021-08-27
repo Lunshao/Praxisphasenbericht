@@ -1,0 +1,31 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{Abk\IeC {\"u}rzungsverzeichnis}{III}{section*.3}% 
+\contentsline {section}{\nonumberline Abbildungsverzeichnis}{IV}{section*.4}% 
+\contentsline {section}{\nonumberline Tabellenverzeichnis}{V}{section*.5}% 
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Continental}{1}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Abteilung \acl {SSW}}{1}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Problemstellung}{2}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Motivation}{2}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}Ziel}{2}{subsection.1.5}% 
+\contentsline {section}{\numberline {2}Theoretische Grundlagen}{3}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Aufgabenstellung}{3}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Ausgangslage}{3}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Definition der Requirements}{3}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Programmiersprache Python}{4}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Planung der Arbeitspakete}{5}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Dokumentation des Projekts}{6}{subsection.2.6}% 
+\contentsline {section}{\numberline {3}Realisierung der Arbeitspakete}{7}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Erg\IeC {\"a}nzung der projektspezifischen Daten in der FlashMap}{7}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Installation der Python Bibliothek pandas}{8}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Implementierung der reader-Funktion f\IeC {\"u}r die FlashMap}{9}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Implementierung der reader-Funktion f\IeC {\"u}r die Vorlagen}{9}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Implementierung der handler-Funktion zum Austauschen der Platzhalter}{9}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}Verifizierung des Codes}{10}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Abdeckung der Projektanforderungen}{10}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Funktionalit\IeC {\"a}t des Codes}{10}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Code Review via GIT}{11}{subsection.4.3}% 
+\contentsline {section}{\numberline {5}Zusammenfassung und Ausblick}{12}{section.5}% 
+\contentsline {section}{Literaturverzeichnis}{VI}{section*.7}% 
+\contentsline {section}{\numberline {A}Python Programmcode}{VII}{appendix.A}% 
+\contentsline {section}{Versicherung}{XXV}{section*.8}% 
