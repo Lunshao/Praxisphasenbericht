@@ -2,19 +2,18 @@
 
 \section{Proof of Concept}
 \label{section:poc}
-Zum Start des Projekts wird zusammen mit den betreuenden Kollegen eine Roadmap entworfen.
-Diese bietet eine grobe Übersicht über die Arbeitsschritte und soll gerade zu Beginn bei der Strukturierung helfen.\\
+Zum Start des Projekts wurde zusammen mit den betreuenden Kollegen eine Roadmap entworfen.
+Diese bot gerade zu Beginn eine grobe Übersicht über die Arbeitsschritte und sollte zu einem strukturierteren Arbeitsverlauf beitragen.\\
 
-Hierfür wird eine Confluence Seite eingerichtet, auf welcher die groben Arbeitsschritte, sowie Diagramme und weitere Informationen hinterlegt werden.
-Außerdem wird eine Unterseite mit erstellt, auf welcher der Austausch im wöchentlichen Projektmeeting dokumentiert wird.
-Hier können Informationen festgehalten werden, sowie Aufgaben mit zeitlicher Begrenzung zugeteilt werden.\\
+Hierfür wurde eine Confluence Seite eingerichtet, auf welcher die groben Arbeitsschritte, sowie Diagramme und weitere Informationen hinterlegt worden sind.
+Des weiteren wurde eine Subseite erstellt, auf welcher der Austausch im wöchentlichen Projektmeeting statt fand.
+Hier konnten alle relevanten Informationen festgehalten werden, sowie Aufgaben mit zeitlicher Begrenzung zugeteilt werden.\\
 
 Alle diese Schritte sollen zu einem erfolgreicheren Informationsaustausch, sowie Projektverlauf beitragen.
 
 
 \subsection{Roadmap}
 \label{section:roadmap}
-
 Die Arbeitsschritte sind in einem initialen Projektmeeting zusammen mit den Betreuern entstanden.
 Dabei fand ein Brainstorming statt und alle gesammelten Ideen wurden aufgeschrieben.\\
 
@@ -66,21 +65,26 @@ Nachfolgend eine Auflistung der gängigen \acl{DS} nach \acl{BS}.
 
 \subsubsection{littlefs}
 "A little fail-safe filesystem" oder auch littlefs ist ein aus der embedded Welt stammendes \acl{DS}.
-Dieses wird normalerweise bei kleineren Mikrocontrollern angewendet, da es keinen großen Funktionsumfang besitzt.\\
+Dieses wird normalerweise bei kleineren Mikrocontrollern angewendet, da es einen geringeren Funktionsumfang besitzt.
+Genau dies war vom Projekt gewünscht, da die Applikation lediglich kleinere Dateien zu speichern vor sah.\\
 
-% Irgendwas perfekt für das Projekt, weil genau diese Anwendung mit nicht vielen Anforderungen
-% Erklärung der Kombination der FS aus welchen littlefs besteht
+Da das \acl{DS} später Teil eines Controllers im Automotive Bereich werden soll, müssen einige wichtige Aspekte erfüllt sein.
 
-littlefs konzentriert sich auf drei wesentlichen Aspekte:
 \begin{itemize}
 	\item \textbf{Widerstandsfähigkeit gegen Stromausfall}
 	\item \textbf{Gleichmäßiger Verschleiß der Hardware}
 	\item \textbf{Begrenzter RAM/ROM}
 \end{itemize}
 
+Da es im Auto zu Spannungsverlust kommen kann, wenn Probleme im elektronischen Boardnetz auftreten,
+ist es wichtig, dass das \acl{DS} keinerlei Daten verliert.
+Außerdem ist es wichtig, dass der Speicher der Hardware gleichmäßig verschlissen wird,
+da das System ansonsten frühzeitig ausfallen könnte.
+Auch der RAM, welcher genutzt wird muss begrenzt sein, da ansonsten andere Applikationen Fehler bekommen und
+das System abstürzen könnte.\\
+
+% Erklärung der Kombination der FS aus welchen littlefs besteht
 % Generelle Beschreibung wie littlefs funktioniert
-% -> maybe erst danach die 3 Aspekte nennen
-% Funktionsweise der 3 Aspekte verdeutlichen
 
 > Kombination aus Logging \& Copy on Write\\
 > Aufbau von littlefs als Grafik\\
